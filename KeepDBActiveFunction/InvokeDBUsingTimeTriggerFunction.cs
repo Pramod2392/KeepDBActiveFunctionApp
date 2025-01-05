@@ -23,7 +23,7 @@ namespace KeepDBActiveFunction
         [Function(nameof(InvokeDBUsingTimeTriggerFunction))]
         //[TimerTrigger("0 */45 * * * *")]
         //[TimerTrigger("0 */5 * * * *")]
-        public async Task Run([TimerTrigger("0 */30 * * * *")] TimerInfo myTimer)
+        public async Task Run([TimerTrigger("0 */15 * * * *")] TimerInfo myTimer)
         {
             try
             {
