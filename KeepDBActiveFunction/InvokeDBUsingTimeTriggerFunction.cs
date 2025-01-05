@@ -20,7 +20,7 @@ namespace KeepDBActiveFunction
             _connection = new SqlConnection(GetConnectionString());
         }
 
-        [Function("InvokeDBUsingTimeTriggerFunction")]
+        [Function(nameof(InvokeDBUsingTimeTriggerFunction))]
         //[TimerTrigger("0 */45 * * * *")]
         //[TimerTrigger("0 */5 * * * *")]
         public async Task Run([TimerTrigger("0 */45 * * * *")] TimerInfo myTimer)
